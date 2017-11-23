@@ -275,8 +275,7 @@ def meshlist2stl(mesh_list):
 #------------------------------------------------------
 
 if __name__ == "__main__":
-    
-    
+
     #====================================================================
     #==============         TEST PARAMETERS     =========================
     finish = 20
@@ -285,6 +284,7 @@ if __name__ == "__main__":
     
     selector = 2 # 0 - 1 - 2
     
+    #====================================================================
     if len(argv)>1 and argv[1]=='-h':
         print('''
 Syntax python cylinder.py <args>
@@ -304,8 +304,7 @@ Syntax python cylinder.py <args>
         if len(argv)>3:
             height = int(argv[3])
         if len(argv)>4:
-            selector = int(argv[4])
-            
+            selector = int(argv[4])         
         #====================================================================
         if selector == 2:
             cylinder = build_cylindricalmesh( radius, height, finish)
@@ -328,7 +327,4 @@ Syntax python cylinder.py <args>
             meshes = [mesh.Mesh(onemesh)]
             meshrender( meshes,0)
 
-    
-    
-
-    
+            

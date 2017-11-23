@@ -188,6 +188,7 @@ def build_pipemesh(radius, height, height_chunks, radial_chunks, theta=0):
 def mesh_randcrea( base_mesh):
     ''' working on it.... at the moment is yust nothing more
     than a work bench'''
+    //TODO: Bring the random position gen, and neat this
     meshes = [mesh.Mesh( base_mesh.copy()) for _ in range(11)]
     
     # Rotate 90 degrees over the Y axis

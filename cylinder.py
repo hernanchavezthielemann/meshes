@@ -7,7 +7,7 @@ from numpy import pi, sin, cos, zeros, array, concatenate
 import base.pipe as pipemesh
 import base.circle as circlemesh
 from utils.render import meshrender
-from utils.save_stl import meshlist2stl
+from utils.save import meshlist2stl
 
 def build_cylindricalmesh(radius, height, finishing):
     ''' builds a cylindrical mesh starting on (0, 0, 0)... lacking verbose

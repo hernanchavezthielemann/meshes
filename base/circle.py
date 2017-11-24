@@ -10,7 +10,7 @@ from stl import mesh
 def build(radius, finishing, info_flag = False):
     
     angular_chunk_qty, core_qty = finishing2size( finishing)
-    circularmeshdata = _buid(radius, angular_chunk_qty, core_qty)
+    circularmeshdata = _build(radius, angular_chunk_qty, core_qty)
     
     if info_flag:
         return circularmeshdata, angular_chunk_qty, core_qty

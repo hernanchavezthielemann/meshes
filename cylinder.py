@@ -70,6 +70,7 @@ Syntax python cylinder.py <args>
             selector = int(argv[4])
             
         #====================================================================
+    if len(argv)<= 1 or (len(argv)>1 and (argv[1]<>'-h')):
         if selector == 2:
             cylinder = build_cylindricalmesh( radius, height, finish)
             #meshes = mesh_randcrea( cylinder)
